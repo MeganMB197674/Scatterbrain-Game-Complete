@@ -3,26 +3,26 @@
 /* Add font face rule to use downloaded font */
 @font-face {
     font-family: RigBold;
-    src: url(Fonts/Rig-BoldHalftone.ttf);
+    src: url(Rig-BoldHalftone.ttf);
 }
 
 /* Add font face rule to use downloaded font */
 @font-face {
     font-family: DMsans;
-    src: url(Fonts/DMSans-Regular.ttf);
+    src: url(DMSans-Regular.ttf);
 }
 
 /* Add font face rule to use downloaded font */
 @font-face {
     font-family: Poppins;
-    src: url(Fonts/Poppins-Black.ttf);
+    src: url(Poppins-Black.ttf);
 }
 
 /* Styling for entire page */
 html{
     /* Make the background of the page an image, specify how much area it should cover, stop repeating */
     /* Image source: https://unsplash.com/@melpoole?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */ 
-    background-image: url(Images/PurpleDotBackground.jpg);
+    background-image: url(PurpleDotBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     /* Align all elements of the page to the center */
