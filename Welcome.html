@@ -1,0 +1,60 @@
+<!-- Megan Boyer - CSC256 Final Project: 'Scatterbrain' memory game - 5/23/2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title to be displayed in browser tab-->  
+    <title>Scatterbrain: Overview</title>
+    <!--Icon to display next to title in browser tab-->
+    <!--Attribution: https://www.flaticon.com/free-icons/stress title="stress icons">Stress icons created by juicy_fish - Flaticon-->
+    <link rel="Icon" href="Images/BrainIcon.png">
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="Welcome.css">
+    <!--Link to JS file-->
+    <script src="Scatterbrain.js"></script>
+</head>
+<body>
+ <!--Header one for title of game-->
+ <h1 class="Title">SCATTERBRAIN</h1>
+ <!--Image source: PNGtree.com-->
+ <img class= "PlayingCards" src="Images/PlayingCards.png">
+ <!--Put slogan on new line-->
+ <br> 
+ <!--Header two for game slogan-->
+ <h2 class="Slogan">How good is your memory?</h2>
+ <!--Div to hold fun facts section of page-->
+<div class="FunFact">
+    <!--Image source: https://filmescaseiroz.blogspot.com/2021/08/the-best-20-brain-exercise-gif.html-->
+    <img class= "BrainLifting" src="Images/BrainLifting.gif">
+    <!--H3 for fun facts section-->
+    <h3>Did You Know?</h3>
+    <!--Unordered list for fun facts-->
+    <ul>
+        <li>"Short-term memory can hold up to 7 pieces of information at the same time... But only for around 20 seconds!" (Burr, 2018)</li>
+        <li>"According to a study conducted in 2001, left-handed people have better memories. This is because the corpus callosum
+            (the white matter in the brain) in lefties is larger than that of right-handed people." (Burr, 2018)</li>
+            <li>"Over the course of a lifetime, scientists estimate that the modern human brain will hold up to 1 quadrillion 
+                pieces of information. To give up a better idea, a quadrillion is 1,000,000,000,000,000!" (Burr, 2018)</li>
+    </ul>
+</div>
+     <!--Container for directions-->
+    <div class="Container">
+        <!--Header three displaying overview title-->
+        <h3 class="OverviewTitle">Overview & Instructions:</h3>
+        <!--Overview of game as nested div-->
+        <div class="Overview">
+            Welcome to 'Scatterbrain!' Scatterbrain is a memory game which aims to test how well you can remember a given set of data.
+            In this game, you will be provided a sentence or phrase for a specified amount of time. Then, once the timer is up, some words will
+            magically disappear from the sentence or phrase and you will be asked to select the correct words from a drop-down menu. 
+        </div>
+        <!--Button to navigate to the game screen - used entity code for play arrow-->
+        <button type = "button" id="toGameButton" onmouseover="changeWelcomeButton()" onmouseout="revertWelcomeButton()" onclick="location.href='Game.html'"> Play &#9654; </button>
+        <!--Footer to display site author information-->
+        <footer class="welcomeFooter">Site created by Megan Boyer</footer>
+        </body>
+    </div>
+   
+</html>

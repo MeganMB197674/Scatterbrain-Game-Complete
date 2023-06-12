@@ -1,0 +1,152 @@
+/* Megan Boyer - CSC256 Final Project: 'Scatterbrain' memory game - 5/23/2023 */
+
+/* Add font face rule to use downloaded font */
+@font-face {
+    font-family: RigBold;
+    src: url(Fonts/Rig-BoldHalftone.ttf);
+}
+
+/* Add font face rule to use downloaded font */
+@font-face {
+    font-family: DMsans;
+    src: url(Fonts/DMSans-Regular.ttf);
+}
+
+/* Add font face rule to use downloaded font */
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Black.ttf);
+}
+
+/* Styling for entire page */
+html{
+    /* Make the background of the page an image, specify how much area it should cover, stop repeating */
+    /* Image source: https://unsplash.com/@melpoole?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText */ 
+    background-image: url(Images/PurpleDotBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Align all elements of the page to the center */
+    text-align: center;
+}
+
+/* Styling for container div */
+.Container{
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.551),rgba(128, 0, 128, 0.49));
+    width: 40%;
+    height: 300px;
+    border-radius: 5px;
+    margin: 30px 30px 0px 700px;
+    box-shadow: black 10px 10px 8px;
+
+}
+
+/* Styling for 'Fun Facts' container */
+.FunFact{
+    width: 30%;
+    height:450px; 
+    background-image: -webkit-linear-gradient(rgba(128, 0, 128, 0.49), rgba(255, 255, 255, 0.551));
+    border-radius: 5px;    
+    text-align: center;
+    margin-left: 100px;
+    float: left;
+    box-shadow: black 10px 10px 8px;
+}
+
+/* Styling for header 3 elements */
+h3{
+    font-family: Poppins;
+    margin-top: 0;
+}
+
+/* Styling for list items (fun facts) */
+li{
+    font-family: DMsans;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Styling for an image on welcome screen */
+.BrainLifting{
+    width: 100px;
+    height: 100px; 
+    display: inline-block;
+    padding: 0%;
+}
+
+/* Styling for image of playing cards */
+.PlayingCards{
+    width: 100px; 
+    height: 100px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+/* Styling for just the title */
+.Title{
+    /* Change the font */
+    font-family: RigBold;
+    /* Increase font size */
+    font-size: 60px;
+    /* Get rid of any margin on the title's bottom to move slogan and title closer */
+    margin-bottom: 0%;
+    /* Set to inline so that images may sit next to it */
+    display: inline-block;
+    /* Change title font color */
+    color:white;
+    /* Give the title text a border */
+    -webkit-text-stroke: 0.5px purple;
+    /* Fill the text with a color */
+    -webkit-text-fill-color: white;
+}
+
+/* Styling for the slogan h2 */
+.Slogan{
+    font-family: Poppins;
+    font-weight: lighter;
+    margin-top: 0%;
+    margin-left: 10%;
+    -webkit-text-stroke: 0.3px white;
+}
+
+/* Styling for the 'Overview & Instructions' header 3 */
+.OverviewTitle{
+    font-family: Poppins;
+}
+
+/* Styling for overview div */
+.Overview{
+    font-family: DMsans;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+    padding: 0;
+    font-weight: bold;
+}
+
+/* Styling for footer */
+.welcomeFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background-color:rgb(143, 14, 143);
+    color: black;
+    text-align: center;
+    border-top: 2px black groove;
+    font-family: DMsans;
+    font-style: italic;
+}
+
+/* Styling for buttons */
+#toGameButton{
+    border-radius: 5px;
+    font-family: RigBold;
+    font-size: large;
+    background-color:lightgrey;
+    -webkit-text-stroke: 0.5px;
+    margin-top: 40px;
+}
+

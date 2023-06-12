@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Scatterbrain</title>
+    <!--Icon to display next to title in browser tab-->
+    <!--Attribution: https://www.flaticon.com/free-icons/stress title="stress icons">Stress icons created by juicy_fish - Flaticon-->
+    <link rel="Icon" href="Images/BrainIcon.png">
+    <!--Link to CSS-->
+    <link rel="stylesheet" href="Game.css">
+</head>
+<body>
+    <!--H3 element to display instructions-->
+    <h3 id="Header">Remember the following:</h3>
+    <!--Empty paragraph element that is appended children in JS (the phrase to remember is a child)-->
+    <p id="Instructions"></p>
+    <!--Paragraph to hold game details-->
+    <p id="Note">
+        Press play to begin! 
+        <br>
+        A phrase will appear and disappear when the timer runs out
+    </p>
+    <p id="results"></p>
+    <!--Form for quiz - uses JS to appear once timer runs out-->
+    <form id="quiz" name="quiz" action="none">
+        <!--Paragraph with form instructions-->
+        <p>Please select the correct options from the drop-down menus:</p>
+        <!--Paragraph displaying form question-->
+        <p>1. The cat was what color?</p>
+        <!--Control for selecting an option from drop-down menu - name 'catColors'-->
+        <select name="catColors">
+            <!--Options in drop-down menu - assigned values-->
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Orange">Orange</option>
+            <option value="Grey">Grey</option>
+        </select>
+        <!--Paragraph displaying form question-->
+        <p>2. What color was the couch?</p>
+        <!--Control for selecting an option from drop-down menu - name 'couchColors'-->
+        <select name="couchColors">
+            <!--Options in drop-down menu - assigned values-->
+            <option value="Black">Black</option>
+            <option value="Brown">Brown</option>
+            <option value="Tan">Tan</option>
+            <option value="Cream">Cream</option>
+        </select>
+        <!--Paragraph displaying form question-->
+        <p>3. What was the couch next to?</p>
+        <!--Control for selecting an option from drop-down menu - name 'SurroundingAreas'-->
+        <select name="surroundingAreas">
+            <!--Options in drop-down menu - assigned values-->
+            <option value="Coffee Table">Coffee Table</option>
+            <option value="Nightstand">Nightstand</option>
+            <option value="TV">TV</option>
+            <option value="Window">Window</option>
+        </select>
+    </form>
+    <!--Div to display timer from JS file-->
+    <div id="timer"></div>
+    <!--Link to JS file-->
+    <script src="Scatterbrain.js"></script>
+    <!--Button to start the game - used entity code for play arrow-->
+    <!--Runs functions to change color on hover and off hover, to display the phrase, and start a timer-->
+    <button type = "button" id="startGameButton" onmouseover="changePlayButton()" onmouseout="revertPlayButton()" onclick= "displayPhrase1(); runTimer();"> Play &#9654; </button>
+    <!--Button to navigate the the results page after form filled out. Runs functions to change color when user hovers and leaves hover, validate form responses, and display the results-->
+    <button type="button" id="getResultsButton" onmouseover="changeGetResultsButton()" onmouseout="revertGetResultsButton()" onclick="displayResults(); animateBorder();">Get Results!</button>
+    <!--Image that will be hidden when timer runs out-->
+    <img id="Cat" src="Images/GreyTabbyCat.png">
+</body>
+</html>

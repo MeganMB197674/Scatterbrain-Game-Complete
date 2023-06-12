@@ -1,0 +1,140 @@
+/* Megan Boyer - CSC256 Final Project: 'Scatterbrain' memory game - 5/23/2023 */
+
+/* Styles written to the entire page - specify background & align all elements to center */
+html{
+    background-image: url('Images/PurpleGradientBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Add font face rule to use downloaded font */
+@font-face {
+    font-family: RigBold;
+    src: url(Fonts/Rig-BoldHalftone.ttf);
+}
+
+/* Add font face rule to use downloaded font */
+@font-face {
+    font-family: DMsans;
+    src: url(Fonts/DMSans-Regular.ttf);
+}
+
+/* Add font face rule to use downloaded font */
+@font-face {
+    font-family: Poppins;
+    src: url(Fonts/Poppins-Black.ttf);
+}
+
+/* Styling for button to start game and to get results/submit form */
+#startGameButton, #getResultsButton{
+    border-radius: 5px;
+    font-family: RigBold;
+    font-size: large;
+    background-color:lightgrey;
+    -webkit-text-stroke: 0.5px;
+    margin-top: 1%;
+}
+
+/* Hide the button with id 'getResultsButton' */
+#getResultsButton{
+    display: none;
+    margin: 1% 45% 20% 45%;
+}
+
+/* Styling for the h3 element with game instructions */
+#Header{
+    font-family: Poppins;
+    font-weight: lighter;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    /* Hide the header */
+    display: none;
+}
+
+/* Styling for p elements with ID 'instructions' - used to display the phrase to remember */
+#Instructions{
+    font-family: DMsans;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px outset darkorchid;
+    width: 70%;
+    padding: 5px 10px 5px 10px;
+    margin: auto;
+    background-color: lavender;
+    /* Hide the paragraph*/
+    display: none;
+}
+
+/* Styling for p element that displays game details */
+#Note{
+    font-family: DMsans;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Styling for timer div */
+#timer{
+    font-size: 20px;
+    font-family: RigBold;
+    color:black;
+    -webkit-text-stroke: black 0.5px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+/* Styling for the form with id 'quiz' */
+#quiz{
+    background-color:rgba(255, 255, 255, 0.3);
+    width: fit-content;
+    text-align: center;
+    font-size: 22px;
+    font-family: RigBold;
+    -webkit-text-stroke: 0.5px black;
+    -webkit-text-fill-color: black;
+    margin: auto;
+    border: 3px dotted white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    /* Hide the quiz/form */
+    display: none;
+}
+
+/* Styling for the drop-down menus */
+select{
+    background-color: lavender;
+    color:black;
+    width: 15%;
+    font-family: DMsans;
+    border:groove black 2px;
+    border-radius: 5px;
+    font-size:15px;
+}
+
+#results{
+    font-family: Poppins;
+    font-size: 30px;
+    -webkit-text-stroke: 0.5px white;
+    margin: auto;
+    margin-top: 10%;
+    width: 40%;
+    height: 60%; 
+    /* Hide the results paragraph until the JS displays it */
+    display: none;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.237);
+    border: 5px groove black;
+    padding: 20px 10px 20px 10px;
+}
+
+#Cat{
+    width: 250px;
+    height: 250px;
+    /* Hide the image - will be revealed and hidden again in JS functions */
+    display: none;
+    margin: auto;
+    border: grey 5px solid;
+    border-radius: 200px;
+}
