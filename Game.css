@@ -2,7 +2,7 @@
 
 /* Styles written to the entire page - specify background & align all elements to center */
 html{
-    background-image: url('Images/PurpleGradientBackground.jpg');
+    background-image: url('PurpleGradientBackground.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -11,19 +11,19 @@ html{
 /* Add font face rule to use downloaded font */
 @font-face {
     font-family: RigBold;
-    src: url(Fonts/Rig-BoldHalftone.ttf);
+    src: url(Rig-BoldHalftone.ttf);
 }
 
 /* Add font face rule to use downloaded font */
 @font-face {
     font-family: DMsans;
-    src: url(Fonts/DMSans-Regular.ttf);
+    src: url(DMSans-Regular.ttf);
 }
 
 /* Add font face rule to use downloaded font */
 @font-face {
     font-family: Poppins;
-    src: url(Fonts/Poppins-Black.ttf);
+    src: url(Poppins-Black.ttf);
 }
 
 /* Styling for button to start game and to get results/submit form */
